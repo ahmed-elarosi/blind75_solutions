@@ -13,11 +13,12 @@ class Solution:
         seen ={}
         for i in range(len(nums)):
             num = nums[i]
-            print("num:",num)
+            #print("num:",num)
             if target - num in seen:
                 return [i, seen[target-num]]
             seen[num] = i
         return []
+#seen{2:0, }
 
 
 
