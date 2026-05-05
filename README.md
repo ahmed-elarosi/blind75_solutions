@@ -17,3 +17,4 @@ This repository:
 - Serves as a **long-term knowledge base**
 
 ---
+## 🗂️ Repository Structure
