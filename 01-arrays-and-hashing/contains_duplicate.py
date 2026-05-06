@@ -38,7 +38,6 @@ class Solution:
             if n in seen:
                 return True
             seen.add(n)
-
         return False
 
 
@@ -49,7 +48,8 @@ class Solution:
 
 
 if __name__ == "__main__":
+
     solution = Solution()
-    #     print(solution.hasDuplicate([1, 2, 3, 3]))
-    #     print(solution.hasDuplicate([1, 2, 3, 4]))
+    print(solution.hasDuplicate([1, 2, 3, 3]))
+    print(solution.hasDuplicate([1, 2, 3, 4]))
     print(solution.hasDuplicate([1, 1, 1, 3, 3, 4, 3, 2, 4, 2]))
