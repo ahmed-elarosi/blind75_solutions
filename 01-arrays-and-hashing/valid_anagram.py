@@ -1,4 +1,4 @@
-from typing import Counter
+from collections import Counter
 
 # class Solution:
 #     def isAnagram(self, s: str, t: str) -> bool:
@@ -13,8 +13,6 @@ class Solution:
         if len(s) != len(t):
             return False
 
-        print("COUNT_S:", Counter(s))
-        print("COUNT_T:", Counter(t))
         return Counter(s) == Counter(t)
 
 
