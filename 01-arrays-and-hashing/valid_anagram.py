@@ -13,6 +13,8 @@ class Solution:
         if len(s) != len(t):
             return False
 
+        print("COUNT_S:", Counter(s))
+        print("COUNT_T:", Counter(t))
         return Counter(s) == Counter(t)
 
 
