@@ -1,9 +1,14 @@
-from typing import List, DefaultDict
+from typing import List
+from collections import defaultdict, Counter
 
 
 class Solution:
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
-        dic = DefaultDict(list)
+        dic = defaultdict(list)
+
+        for word in strs:
+            dic["".join(sorted(word))].append(word)
+        return list(dic.values())
 
 
 if __name__ == "__main__":
